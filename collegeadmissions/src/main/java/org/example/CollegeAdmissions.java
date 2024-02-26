@@ -10,11 +10,11 @@ public class CollegeAdmissions {
     public static void main(String[] args) {
 
         try {
-            URL studentResourceUrl = CollegeAdmissions.class.getResource("/students.csv");
+            URL studentResourceUrl = CollegeAdmissions.class.getResource("/studentsFinalProcessed.csv");
             assert studentResourceUrl != null;
             File studentFile = new File(studentResourceUrl.toURI());
 
-            URL collegeResourceUrl = CollegeAdmissions.class.getResource("/colleges.csv");
+            URL collegeResourceUrl = CollegeAdmissions.class.getResource("/collegesWithPreferences.csv");
             assert collegeResourceUrl != null;
             File collegeFile = new File(collegeResourceUrl.toURI());
 
